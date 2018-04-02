@@ -12,19 +12,17 @@ function idCard() {
 	document.getElementById('postAddress').innerHTML = address;
 
 	//Create two variables named age and phoneNumber that pulls in the value of the corresponding input using DOM
-	var age = document.getElementById('age').value;
-	var phoneNumber = document.getElementById('phoneNumber').value;
+	var age = parseInt(document.getElementById('age').value);
+	var phoneNumber = parseInt(document.getElementById('phoneNumber').value);
 
 	//Create an empty array named numberArray
 	var numberArray = [];
 	//Push both the age and phoneNumber variables into your empty array
 	numberArray.push(age);
 	numberArray.push(phoneNumber);
-	console.log(numberArray);
 
 	//Create a for loop that will loop through numberArray
 	for(var i=0; i < numberArray.length; i++) {
-		console.log(numberArray[i]);
 		//Check to see if the numberArray at index i is less than or equal to 100. 
 		if(numberArray[i] <= 100) {
 			//If it is, use DOM innerHTML to write "Age: " plus the variable age.

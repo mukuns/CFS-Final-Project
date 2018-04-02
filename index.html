@@ -7,26 +7,28 @@
    <body>
 
     <h1>Let's Create an ID card!</h1>
-    <fieldset>
-      <label for="firstName">First Name</label><br>
+    <div id="form">
+      <label for="firstName">First Name: </label><br>
       <input type="text" placeholder="First Name" id="firstName"><br>
-      <label for="lastName">Last Name</label><br>
+      <label for="lastName">Last Name: </label><br>
       <input type="text" placeholder="Last Name" id="lastName" required><br>
-      <label for="age">Age</label><br>
+      <label for="age">Age: </label><br>
       <input type="text" placeholder="Age" id="age" required><br>
-      <label for="phoneNumber">Phone Number</label><br>
+      <label for="phoneNumber">Phone Number: </label><br>
       <input type="text" placeholder="Phone Number" id="phoneNumber" required><br>
-      <label for="address">Address</label><br>
+      <label for="address">Address: </label><br>
       <input type="text" placeholder="Address" id="address" required><br>
-      <input type="submit" id="btn" onclick="idCard()" value="Get ID card!">
-    </fieldset>
+      <input type="submit" id="btn" onclick="idCard()" value="Get ID card!"><br><br>
+    </div>
 
     <div id="idCard">
-        <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
-        <p id="postFullName"></p>
-        <p id="postAge"></p>
-        <p id="postPhoneNumber"></p>
-        <p id="postAddress"></p>
+      
+      <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+      <p id="postFullName"></p>
+      
+      <p id="postAge"></p>
+      <p id="postPhoneNumber"></p>
+      <p id="postAddress"></p>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
